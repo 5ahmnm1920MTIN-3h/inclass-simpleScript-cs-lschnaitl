@@ -439,13 +439,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 147592591}
   m_TextComponent: {fileID: 1522041353}
   m_Placeholder: {fileID: 993903585}
-  m_ContentType: 2
+  m_ContentType: 3
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 2
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 2
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -620,10 +620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 626080757}
-  inputField1: {fileID: 0}
-  inputField2: {fileID: 0}
-  resetButton: {fileID: 0}
-  subtractButton: {fileID: 0}
+  inputField1: {fileID: 147592590}
+  inputField2: {fileID: 595892057}
+  resetButton: {fileID: 1793497247}
+  subtractButton: {fileID: 1039593904}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,13 +789,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 595892058}
   m_TextComponent: {fileID: 998687969}
   m_Placeholder: {fileID: 115338723}
-  m_ContentType: 2
+  m_ContentType: 3
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 2
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 2
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
