@@ -5,6 +5,7 @@ public class ComputeNumbers : MonoBehaviour
 { 
     public Text result;
 
+    private const string resultText = "Result";
     public InputField inputField1;
     public InputField inputField2;
 
@@ -32,7 +33,7 @@ public class ComputeNumbers : MonoBehaviour
         // reset the all texts
         inputField1.text = "";
         inputField2.text = "";
-        result.text = "Result";
+        result.text = resultText;
 
         // give access to the inputfields again
         inputField1.interactable = true;
