@@ -18,26 +18,31 @@ public class ComputeNumbers : MonoBehaviour
 
     public void SetResult()
     {
-
         result.text = SubtractNumbers().ToString();
+
         inputField1.interactable = false;
         inputField2.interactable = false;
+
         subtractButton.interactable = false;
         resetButton.interactable = true;
     }
 
     public void Reset()
     {
-        inputField1.text = "0";
-        inputField2.text = "0";
+        // reset the all texts
+        inputField1.text = "";
+        inputField2.text = "";
+        result.text = "Result";
 
+        // give access to the inputfields again
         inputField1.interactable = true;
         inputField2.interactable = true;
 
+        // activate the now needed buttons
         subtractButton.interactable = true;
         resetButton.interactable = false;
 
-        result.text = "Result";
+
     }
     private int SubtractNumbers()
     {
