@@ -3,14 +3,13 @@ using UnityEngine.UI;
 
 public class ComputeNumbers : MonoBehaviour
 { 
-    public Text result;
+    [SerializeField] private Text result;
+    [SerializeField] private InputField inputField1;
+    [SerializeField] private InputField inputField2;
+    [SerializeField] private Button resetButton;
+    [SerializeField] private Button subtractButton;
 
     private const string resultText = "Result";
-    public InputField inputField1;
-    public InputField inputField2;
-
-    public Button resetButton;
-    public Button subtractButton;
 
     private void Start()
     {
@@ -19,6 +18,7 @@ public class ComputeNumbers : MonoBehaviour
 
     public void SetResult()
     {
+
         result.text = SubtractNumbers().ToString();
 
         inputField1.interactable = false;
