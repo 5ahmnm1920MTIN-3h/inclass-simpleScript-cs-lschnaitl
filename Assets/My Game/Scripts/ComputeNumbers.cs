@@ -4,38 +4,44 @@ using UnityEngine.UI;
 public class ComputeNumbers : MonoBehaviour
 { 
     public Text result;
-    public InputField varA;
-    public InputField varB;
-    public Button btn_reset;
-    public Button btn_subtract_Numbers;
+
+    public InputField inputField1;
+    public InputField inputField2;
+
+    public Button resetButton;
+    public Button subtractButton;
 
     private void Start()
     {
-        btn_reset.interactable = false;
+        resetButton.interactable = false;
     }
 
     public void SetResult()
     {
+
         result.text = SubtractNumbers().ToString();
-        varA.interactable = false;
-        varB.interactable = false;
-        btn_subtract_Numbers.interactable = false;
-        btn_reset.interactable = true;
+        inputField1.interactable = false;
+        inputField2.interactable = false;
+        subtractButton.interactable = false;
+        resetButton.interactable = true;
     }
 
     public void Reset()
     {
-        varA.text = "0";
-        varB.text = "0";
-        varA.interactable = true;
-        varB.interactable = true;
-        btn_subtract_Numbers.interactable = true;
-        btn_reset.interactable = false;
+        inputField1.text = "0";
+        inputField2.text = "0";
+
+        inputField1.interactable = true;
+        inputField2.interactable = true;
+
+        subtractButton.interactable = true;
+        resetButton.interactable = false;
+
         result.text = "Result";
     }
     private int SubtractNumbers()
     {
-        int tempResult = int.Parse(varA.text) - int.Parse(varB.text);
+        int tempResult = int.Parse(inputField1.text) - int.Parse(inputField2.text);
         return tempResult;
     }
 }
