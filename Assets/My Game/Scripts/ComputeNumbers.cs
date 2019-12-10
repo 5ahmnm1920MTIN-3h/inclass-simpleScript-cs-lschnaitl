@@ -47,9 +47,9 @@ public class ComputeNumbers : MonoBehaviour
 
 
     }
-    private int SubtractNumbers()
+    private float SubtractNumbers()
     {
-        int tempResult = int.Parse(inputField1.text) - int.Parse(inputField2.text);
+        float tempResult = float.Parse(inputField1.text) - float.Parse(inputField2.text);
         return tempResult;
     }
 }
